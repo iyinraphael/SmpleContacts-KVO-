@@ -7,44 +7,45 @@
 //
 
 #import "PesronTableViewController.h"
+#import "ModelController.h"
+#import "PesronTableViewCell.h"
 
-@interface PesronTableViewController ()
+@interface PesronTableViewController () <NSFetchedResultsControllerDelegate>
+
 
 @end
 
-@implementation PesronTableViewController
+@implementation PesronTableViewController {
+    ModelController *model;
+    NSFetchedResultsController<Person *> *_frc;
+    NSPersonNameComponentsFormatter *_nameFormater;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _nameFormater = [[NSPersonNameComponentsFormatter alloc] init];
+    model = [[ModelController alloc] init];
+    _frc = [model makeNewPeopleFetchedResultsController];
+    _frc.delegate = self;
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
 }
 
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return _frc.sections[section].numberOfObjects;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    PesronTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PersonCell" forIndexPath:indexPath];
+    Person *p = _frc.sections[indexPath.section].objects[indexPath.row];
+    NSPersonNameComponents *nameComponents =  [[NSPersonNameComponents alloc] init];
+    nameComponents.givenName = p.firstName;
+    nameComponents.familyName = p.lastName;
     
-    // Configure the cell...
-    
+    cell.nameLabel.text = [_nameFormater stringFromPersonNameComponents:nameComponents];
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

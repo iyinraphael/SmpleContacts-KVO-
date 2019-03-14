@@ -9,9 +9,6 @@
 #import "PesronTableViewCell.h"
 
 @interface PesronTableViewCell()
-@property (weak, nonatomic) IBOutlet UIImageView *profilePicture;
-
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 
 @end
 

@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PesronTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *profilePicture;
+
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
 @end
 
 NS_ASSUME_NONNULL_END
