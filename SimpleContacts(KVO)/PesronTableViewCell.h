@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PesronTableViewCell.h
 //  SimpleContacts(KVO)
 //
 //  Created by Iyin Raphael on 3/14/19.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface PesronTableViewCell : UITableViewCell
 
 @end
 
+NS_ASSUME_NONNULL_END
