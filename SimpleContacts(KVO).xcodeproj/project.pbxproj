@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EB8B414C223B10A1000745D0 /* PesronTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8B414B223B10A1000745D0 /* PesronTableViewCell.m */; };
+		EB8B414F223B7992000745D0 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8B414E223B7992000745D0 /* PersonViewController.m */; };
 		EBC79A7D223B066900313F49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC79A7C223B066900313F49 /* AppDelegate.m */; };
 		EBC79A83223B066900313F49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC79A81223B066900313F49 /* Main.storyboard */; };
 		EBC79A86223B066900313F49 /* SimpleContacts_KVO_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBC79A84223B066900313F49 /* SimpleContacts_KVO_.xcdatamodeld */; };
@@ -21,6 +22,8 @@
 /* Begin PBXFileReference section */
 		EB8B414A223B10A1000745D0 /* PesronTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PesronTableViewCell.h; sourceTree = "<group>"; };
 		EB8B414B223B10A1000745D0 /* PesronTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PesronTableViewCell.m; sourceTree = "<group>"; };
+		EB8B414D223B7992000745D0 /* PersonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
+		EB8B414E223B7992000745D0 /* PersonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
 		EBC79A78223B066900313F49 /* SimpleContacts(KVO).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleContacts(KVO).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC79A7B223B066900313F49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EBC79A7C223B066900313F49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 				EBC79A7B223B066900313F49 /* AppDelegate.h */,
 				EBC79A7C223B066900313F49 /* AppDelegate.m */,
 				EBC79A81223B066900313F49 /* Main.storyboard */,
+				EB8B414D223B7992000745D0 /* PersonViewController.h */,
+				EB8B414E223B7992000745D0 /* PersonViewController.m */,
 				EB8B414A223B10A1000745D0 /* PesronTableViewCell.h */,
 				EB8B414B223B10A1000745D0 /* PesronTableViewCell.m */,
 				EBC79A87223B066B00313F49 /* Assets.xcassets */,
@@ -157,6 +162,7 @@
 				EBC79A7D223B066900313F49 /* AppDelegate.m in Sources */,
 				EBC79A99223B0F8800313F49 /* PesronTableViewController.m in Sources */,
 				EBC79A96223B09EE00313F49 /* ModelController.m in Sources */,
+				EB8B414F223B7992000745D0 /* PersonViewController.m in Sources */,
 				EBC79A8E223B066B00313F49 /* main.m in Sources */,
 				EB8B414C223B10A1000745D0 /* PesronTableViewCell.m in Sources */,
 				EBC79A86223B066900313F49 /* SimpleContacts_KVO_.xcdatamodeld in Sources */,
